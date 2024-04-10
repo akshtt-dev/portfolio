@@ -1,8 +1,7 @@
 node_modules/
 .replit
-package.json
 package-lock.json
 .upm/
 vite.config.js
 README.md
-hmm
+.git
