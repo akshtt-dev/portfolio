@@ -9,6 +9,7 @@
 :root {
   --primary-color: rgb(255, 255, 255);
   --h1-color: rgb(0 255 239);
+  --button-background-light: #474747;
 }
 
 html {
@@ -133,14 +134,21 @@ nav ul li a:hover {
   width: 2em;
   border: none;
   cursor: pointer;
+  background: none;
 }
+
 #burger div i {
   border: none;
   display: block;
-  color: black;
+  color: rgb(255, 255, 255);
   font-size: large;
   font-weight: bold;
   padding: 2px;
+}
+
+.rightNav div:hover {
+  background-color: var(--button-background-light);
+  border-radius: 50%;
 }
 
 #sectionOne {
