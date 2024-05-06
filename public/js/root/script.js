@@ -1,6 +1,7 @@
 const searchInput = document.getElementById("search");
 const resetBtn = document.getElementById("reset");
 const resetSymbol = document.getElementById("resetSymbol");
+const homeAnchor = document.getElementById("home");
 
 // Initially hide reset button and symbol
 resetBtn.style.visibility = "hidden";
@@ -22,4 +23,8 @@ searchInput.addEventListener("input", () => {
 resetBtn.addEventListener("click", () => {
     resetBtn.style.visibility = "hidden";
     resetSymbol.style.visibility = "hidden";
+});
+
+homeAnchor.addEventListener("click", () => {
+    location.reload();
 });
