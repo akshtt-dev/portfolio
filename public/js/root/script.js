@@ -25,6 +25,7 @@ resetBtn.addEventListener("click", () => {
     resetSymbol.style.visibility = "hidden";
 });
 
-homeAnchor.addEventListener("click", () => {
+homeAnchor.addEventListener("click", (event) => {
+    event.preventDefault();
     location.reload();
 });
