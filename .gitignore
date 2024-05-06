@@ -6,3 +6,4 @@ vite.config.js
 README.md
 .git
 config.json
+public/js/root/reload.js
