@@ -29,3 +29,8 @@ homeAnchor.addEventListener("click", (event) => {
     event.preventDefault();
     location.reload();
 });
+
+const currentYear = new Date().getFullYear();
+
+// Update the content of the span element with id "currentYear"
+document.getElementById("currentYear").textContent = currentYear;

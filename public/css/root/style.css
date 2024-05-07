@@ -9,6 +9,7 @@
 :root {
   --primary-color: rgb(255, 255, 255);
   --h1-color: rgb(0 255 239);
+  --anchor-color: #39cdbb;
   --button-background-light: #474747;
 }
 
@@ -88,7 +89,7 @@ nav ul li a {
 nav ul li a:hover {
   /* color: #0246ac; */
   /* color: #b2b3ab; */
-  color: #3d41ac;
+  color: var(--anchor-color);
 }
 
 .rightNav form {
@@ -170,6 +171,7 @@ nav ul li a:hover {
   align-items: start;
   /* justify-content: center; */
   padding: 3em;
+  gap: 1em;
 }
 
 .leftSection h1 {
@@ -189,6 +191,23 @@ nav ul li a:hover {
   height: 50vh;
   width: 50vh;
   border-radius: 50%;
+}
+
+/* FOOTER */
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+  margin: 0;
+  background-color: rgb(0, 0, 0, 0.5);
+  color: var(--primary-color);
+  float: bottom;
+  position: absolute;
+  bottom: 0px;
+  width: 100vw;
+  left: 0px;
 }
 
 /* CUSTOM COLORS */
