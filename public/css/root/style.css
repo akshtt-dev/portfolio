@@ -11,6 +11,8 @@
   --h1-color: rgb(0 255 239);
   --anchor-color: #39cdbb;
   --button-background-light: #474747;
+  --moon-color: rgb(90 60 255);
+  --sun-color: yellow;
 }
 
 html {
@@ -265,4 +267,15 @@ footer {
   font-family: "Ubuntu Mono", monospace;
   font-weight: 700;
   font-style: normal;
+}
+
+/* DARK MODE AND LIGHT MODE */
+.dark-mode, #moon {
+  display: visible;
+  color: var(--moon-color) !important;
+}
+
+.light-mode, #sun {
+  display: none;
+  color: var(--sun-color) !important;
 }
