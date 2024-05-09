@@ -1,4 +1,5 @@
 {
     "port": 80,
-    "root": "./view/root/index.html"
+    "root": "./view/root/index.html",
+    "errorPage": "./view/error/index.html"
 }
