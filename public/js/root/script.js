@@ -2,6 +2,7 @@ const searchInput = document.getElementById("search");
 const resetBtn = document.getElementById("reset");
 const resetSymbol = document.getElementById("resetSymbol");
 const homeAnchor = document.getElementById("home");
+const searchForm = document.getElementById("searchForm");
 const body = document.body;
 
 // Initially hide reset button and symbol
@@ -14,10 +15,12 @@ searchInput.addEventListener("input", () => {
         // Show reset button and symbol
         resetBtn.style.visibility = "visible";
         resetSymbol.style.visibility = "visible";
+        searchForm.style.borderColor = "var(--h1-color)";
     } else {
         // Hide reset button and symbol
         resetBtn.style.visibility = "hidden";
         resetSymbol.style.visibility = "hidden";
+        searchForm.style.borderColor = "";
     }
 });
 
