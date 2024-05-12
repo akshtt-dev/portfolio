@@ -1,8 +1,12 @@
+const birthYear = 2007;
+const startedCodinAge = 12;
 const searchInput = document.getElementById("search");
 const resetBtn = document.getElementById("reset");
 const resetSymbol = document.getElementById("resetSymbol");
 const homeAnchor = document.getElementById("home");
 const searchForm = document.getElementById("searchForm");
+const codingExperience = document.getElementById("codingExperience");
+const sca = document.getElementById("startedCodingAge");
 const body = document.body;
 
 // Initially hide reset button and symbol
@@ -38,6 +42,12 @@ const currentYear = new Date().getFullYear();
 
 // Update the content of the span element with id "currentYear"
 document.getElementById("currentYear").textContent = currentYear;
+
+// Update the content of the span element with id "codingExperience"
+codingExperience.textContent = currentYear - birthYear - startedCodinAge;
+
+// Update the content of the span element with id "startedCodingAge"
+sca.textContent = startedCodinAge;
 
 // DARK MODE AND LIGHT MODE FUNCTIONALITY
 const sun = document.getElementsByClassName("light-mode")[0]; // Get the first element with class "light-mode"
