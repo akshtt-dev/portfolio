@@ -29,7 +29,7 @@ body {
 #bgImageBackground {
   content: "";
   position: relative;
-  height: 100%;
+  height: 100vh;
   width: 100vw;
 }
 
@@ -38,7 +38,7 @@ body {
   position: absolute;
   top: 0px;
   left: 0px;
-  height: 100%;
+  height: 100vh;
   width: 100vw;
   background: url(/src/bgimg/pexels-rostislav-5011647.jpg) no-repeat center/cover;
   opacity: 0.98;
