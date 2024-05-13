@@ -22,7 +22,7 @@ html {
 
 body {
   /* overflow: hidden; */
-  background-color: #fff;
+  background-color: #054070;
 }
 
 /* BACKGROUND IMAGE */
@@ -172,7 +172,7 @@ nav ul li a:hover {
   flex-direction: column;
   align-items: start;
   /* justify-content: center; */
-  padding: 3em;
+  padding: 2em;
   gap: 1em;
 }
 
@@ -250,47 +250,6 @@ footer h3 {
 .white-color {
   color: white;
 }
-/* MEDIA QUERY */
-@media screen and (max-device-width: 890px) {
-  #sectionOne {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    flex-flow: column-reverse;
-    justify-content: center;
-    align-items: center;
-  }
-  footer {
-    display: none;
-  }
-  .leftSection,
-  .rightSection {
-  width: 100vw;
-  height: 50vh;
-  }
-}
-@media screen and (max-device-width: 800px) {
-  .rightNav form {
-    display: none;
-  }
-}
-@media screen and (max-device-width: 530px){
-  .leftNav {
-    display: none;
-  }
-}
-@media screen and (max-device-width: 500px) {
-  .rightNav form {
-    display: none;
-  }
-  .rightSection img {
-    display: block;
-    height: 20rem;
-    width: 20rem;
-    border-radius: 50%;
-  }
-}
-
 
 /* ADDITIONAL CLASSES */
 .underLine {
@@ -333,4 +292,55 @@ footer h3 {
   display: block;
   text-decoration: none;
   color: white;
+}
+
+
+/* MEDIA QUERY */
+@media screen and (max-device-width: 890px) {
+  #sectionOne {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    flex-flow: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  footer {
+    display: none;
+  }
+  .leftSection,
+  .rightSection {
+  width: 100vw;
+  height: 50vh;
+  }
+}
+@media screen and (max-device-width: 800px) {
+  .rightNav form {
+    display: none;
+  }
+}
+@media screen and (max-device-width: 530px){
+  .leftNav {
+    display: none;
+  }
+}
+@media screen and (max-device-width: 500px) {
+  .rightNav form {
+    display: none;
+  }
+  .rightSection img {
+    display: block;
+    height: 20rem;
+    width: 20rem;
+    border-radius: 50%;
+  }
+}
+
+@media screen and (max-device-width: 340px) {
+  .rightSection img {
+    display: block;
+    height: 15rem;
+    width: 15rem;
+    border-radius: 50%;
+  }
 }
