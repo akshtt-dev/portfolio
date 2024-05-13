@@ -237,6 +237,11 @@ footer {
   left: 0px;
 }
 
+footer h3 {
+  font-family: "roboto", sans-serif;
+  font-size: large;
+}
+
 /* CUSTOM COLORS */
 .h1-color {
   color: var(--h1-color);
