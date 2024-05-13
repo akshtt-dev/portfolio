@@ -195,6 +195,31 @@ nav ul li a:hover {
   border-radius: 50%;
 }
 
+/* BUTTONS */
+#socialBtns {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5em;
+}
+
+#github {
+  background-color: black;
+  color: white;
+  padding: 0.5em 1em;
+  border: none;
+  border-radius: 1em;
+  cursor: pointer;
+}
+
+#twitter {
+  background-color: #1DA1F2;
+  color: white;
+  padding: 0.5em 1em;
+  border: none;
+  border-radius: 1em;
+  cursor: pointer;
+}
+
 /* FOOTER */
 footer {
   display: flex;
@@ -296,4 +321,11 @@ footer {
 .light-mode, #sun {
   display: none;
   color: var(--sun-color) !important;
+}
+
+.styleAnchor {
+  cursor: pointer;
+  display: block;
+  text-decoration: none;
+  color: white;
 }
