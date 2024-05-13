@@ -41,7 +41,6 @@ body {
   height: 100vh;
   width: 100vw;
   background: url(/src/bgimg/pexels-rostislav-5011647.jpg) no-repeat center/cover;
-  /* background: linear-gradient(to bottom, #31325f, #00002c); */
   opacity: 0.98;
   z-index: -1;
 }
@@ -52,7 +51,6 @@ nav {
   padding: 1rem;
   display: flex;
   flex-direction: row;
-  /* border: 1px solid rgba(255, 255, 255, 0.4); */
   border: 1px solid rgba(0, 0, 0, 0.4);
   border-radius: 3em;
   background-color: var(--nav-background-color);
@@ -167,7 +165,6 @@ nav ul li a:hover {
 .rightSection {
   width: 50vw;
   height: 80vh;
-  /* border: 2px solid black; */
 }
 
 .leftSection {
@@ -233,16 +230,34 @@ footer {
     justify-content: center;
     align-items: center;
   }
+  footer {
+    display: none;
+  }
+  .leftSection,
+  .rightSection {
+  width: 100vw;
+  height: 50vh;
+  }
 }
 @media screen and (max-device-width: 800px) {
+  .rightNav form {
+    display: none;
+  }
+}
+@media screen and (max-device-width: 530px){
   .leftNav {
     display: none;
   }
 }
-
 @media screen and (max-device-width: 500px) {
   .rightNav form {
     display: none;
+  }
+  .rightSection img {
+    display: block;
+    height: 20rem;
+    width: 20rem;
+    border-radius: 50%;
   }
 }
 
