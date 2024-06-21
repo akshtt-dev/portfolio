@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Lilita+One&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Lilita+One&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
 * {
   margin: 0;
@@ -124,7 +124,6 @@ nav ul li a:hover {
   color: white;
 }
 
-
 #burger {
   width: 50%;
   display: flex;
@@ -232,7 +231,7 @@ nav ul li a:hover {
 }
 
 #twitter {
-  background-color: #1DA1F2;
+  background-color: #1da1f2;
   color: white;
   padding: 0.5em 1em;
   border: none;
@@ -242,7 +241,7 @@ nav ul li a:hover {
 
 #twitter:hover {
   background-color: white;
-  color: #1DA1F2;
+  color: #1da1f2;
   transition: all 0.3s ease-in-out;
 }
 
@@ -320,7 +319,6 @@ footer h3 {
   text-decoration: none;
   color: white;
 }
-
 
 /* MEDIA QUERY */
 @media screen and (min-width: 890px) {
