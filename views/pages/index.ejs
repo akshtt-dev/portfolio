@@ -8,11 +8,12 @@
     <link rel="stylesheet" href="/src/tailwindcss/output.css">
 </head>
 
-<body class="bg-gray-200">
-    <section class="bg-zinc-900 pt-4">
-        <nav class="bg-zinc-950 flex rounded-full mx-8 px-4 justify-evenly items-center">
+<body class="bg-[#d9d9d9] box-border">
+    <section class="bg-[#131313] pt-4">
+        <nav class="bg-[#0f0f0f] flex rounded-full mx-8 px-4 justify-evenly items-center">
             <div class="w-1/2 sm:w-1/4">
-                <h1 class="text-green-400 font-bold flex items-center"><a href="/" class="font-body">akshat.tech</a></h1>
+                <h1 class="text-[#07ff4c] font-bold flex items-center"><a href="/" class="font-body">akshat.tech</a>
+                </h1>
             </div>
             <div class="sm:w-1/2">
                 <ul class="gap-3 justify-center items-center hidden sm:flex">
@@ -48,39 +49,96 @@
         </nav>
         <div class="flex flex-col px-28 pb-8 pt-20">
             <div class="flex">
-                <div class="flex flex-col w-1/2 gap-3">
+                <div class="flex flex-col w-2/3 gap-3">
                     <h1 class="text-white font-extrabold text-6xl font-body">Hello, I am</h1>
-                    <h1 class="text-green-400 font-extrabold text-6xl font-body">Akshat Singh</h1>
-                    <p class="text-white font-bold text-4xl font-body">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                        Libero iure sapiente alias optio laboriosam recusandae, ipsum nobis quam temporibus similique
-                        incidunt itaque, minus autem perspiciatis unde natus dolore fugit voluptatibus.</p>
+                    <h1 class="text-[#07ff4c] font-extrabold text-6xl font-body">Akshat Singh</h1>
+                    <p class="text-white font-bold text-4xl font-body mt-5">Started coding at 12, and I'm currently
+                        balancing school studies with my passion for technology. I create dynamic web applications and
+                        share my journey on my YouTube channel, where I teach and explore coding concepts.</p>
                 </div>
-                <div class="w-1/2">
-                    <img src="" alt="">
-                </div>
-            </div>
-            <div class="flex mt-12 justify-center">
-                <div class="justify-center items-center gap-4 bg-zinc-500 py-2 px-2 rounded-md">
-                    <div class="bg-slate-100">
-
+                <div class="relative flex justify-center items-center w-1/3">
+                    <div class="absolute inset-6 bg-gradient-to-r from-[#07ff4c] to-blue-600 rounded-full p-[3px] animate-spin-slow">
+                        <div class="bg-transparent rounded-full w-[85%] h-[85%]"></div>
                     </div>
-                    <div class="bg-slate-100">
-                        <svg width="67" height="67" viewBox="0 0 67 67" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <img src="src/root/images/avatar.jpg" alt="Profile Icon" class="absolute border-[10px] border-transparent bg-white rounded-full h-[85%]">
+                </div>                             
+            </div>
+            <div class="flex mt-24 justify-center">
+                <div class="flex justify-center items-center gap-10 bg-[#282828] py-2 px-2 rounded-md">
+                    <div class="bg-slate-100 p-1 rounded-sm">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                            class="text-black h-12 w-12 cursor-pointer">
+                            <path d="M10 20.5675C6.57143 21.7248 3.71429 20.5675 2 17" stroke="currentColor"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                             <path
-                                d="M5.58333 61.4167V11.1667C5.58333 9.63125 6.13003 8.31684 7.22344 7.22343C8.31684 6.13003 9.63125 5.58333 11.1667 5.58333H55.8333C57.3688 5.58333 58.6832 6.13003 59.7766 7.22343C60.87 8.31684 61.4167 9.63125 61.4167 11.1667V44.6667C61.4167 46.2021 60.87 47.5165 59.7766 48.6099C58.6832 49.7033 57.3688 50.25 55.8333 50.25H16.75L5.58333 61.4167ZM14.3771 44.6667H55.8333V11.1667H11.1667V47.8073L14.3771 44.6667Z"
-                                fill="#1D1B20" />
+                                d="M10 22V18.7579C10 18.1596 10.1839 17.6396 10.4804 17.1699C10.6838 16.8476 10.5445 16.3904 10.1771 16.2894C7.13394 15.4528 5 14.1077 5 9.64606C5 8.48611 5.38005 7.39556 6.04811 6.4464C6.21437 6.21018 6.29749 6.09208 6.31748 5.9851C6.33746 5.87813 6.30272 5.73852 6.23322 5.45932C5.95038 4.32292 5.96871 3.11619 6.39322 2.02823C6.39322 2.02823 7.27042 1.74242 9.26698 2.98969C9.72282 3.27447 9.95075 3.41686 10.1515 3.44871C10.3522 3.48056 10.6206 3.41384 11.1573 3.28041C11.8913 3.09795 12.6476 3 13.5 3C14.3524 3 15.1087 3.09795 15.8427 3.28041C16.3794 3.41384 16.6478 3.48056 16.8485 3.44871C17.0493 3.41686 17.2772 3.27447 17.733 2.98969C19.7296 1.74242 20.6068 2.02823 20.6068 2.02823C21.0313 3.11619 21.0496 4.32292 20.7668 5.45932C20.6973 5.73852 20.6625 5.87813 20.6825 5.9851C20.7025 6.09207 20.7856 6.21019 20.9519 6.4464C21.6199 7.39556 22 8.48611 22 9.64606C22 14.1077 19.8661 15.4528 16.8229 16.2894C16.4555 16.3904 16.3162 16.8476 16.5196 17.1699C16.8161 17.6396 17 18.1596 17 18.7579V22"
+                                stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
                         </svg>
                     </div>
-                    <div class="bg-slate-100">
-
+                    <div class="bg-slate-100 p-1 rounded-sm">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                            class="text-black h-12 w-12 cursor-pointer">
+                            <path
+                                d="M22 11.5667C22 16.8499 17.5222 21.1334 12 21.1334C11.3507 21.1343 10.7032 21.0742 10.0654 20.9545C9.60633 20.8682 9.37678 20.8251 9.21653 20.8496C9.05627 20.8741 8.82918 20.9948 8.37499 21.2364C7.09014 21.9197 5.59195 22.161 4.15111 21.893C4.69874 21.2194 5.07275 20.4112 5.23778 19.5448C5.33778 19.0148 5.09 18.5 4.71889 18.1231C3.03333 16.4115 2 14.1051 2 11.5667C2 6.28357 6.47778 2 12 2C17.5222 2 22 6.28357 22 11.5667Z"
+                                stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+                            <path d="M11.9955 12H12.0045M15.991 12H16M8 12H8.00897" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
                     </div>
-                    <div class="bg-slate-100">
-
+                    <div class="bg-slate-100 p-1 rounded-sm">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                            class="text-black h-12 w-12 cursor-pointer">
+                            <path
+                                d="M15.5 12C15.5 13.933 13.933 15.5 12 15.5C10.067 15.5 8.5 13.933 8.5 12C8.5 10.067 10.067 8.5 12 8.5C13.933 8.5 15.5 10.067 15.5 12Z"
+                                stroke="currentColor" stroke-width="1.5" />
+                            <path
+                                d="M21.011 14.0965C21.5329 13.9558 21.7939 13.8854 21.8969 13.7508C22 13.6163 22 13.3998 22 12.9669V11.0332C22 10.6003 22 10.3838 21.8969 10.2493C21.7938 10.1147 21.5329 10.0443 21.011 9.90358C19.0606 9.37759 17.8399 7.33851 18.3433 5.40087C18.4817 4.86799 18.5509 4.60156 18.4848 4.44529C18.4187 4.28902 18.2291 4.18134 17.8497 3.96596L16.125 2.98673C15.7528 2.77539 15.5667 2.66972 15.3997 2.69222C15.2326 2.71472 15.0442 2.90273 14.6672 3.27873C13.208 4.73448 10.7936 4.73442 9.33434 3.27864C8.95743 2.90263 8.76898 2.71463 8.60193 2.69212C8.43489 2.66962 8.24877 2.77529 7.87653 2.98663L6.15184 3.96587C5.77253 4.18123 5.58287 4.28891 5.51678 4.44515C5.45068 4.6014 5.51987 4.86787 5.65825 5.4008C6.16137 7.3385 4.93972 9.37763 2.98902 9.9036C2.46712 10.0443 2.20617 10.1147 2.10308 10.2492C2 10.3838 2 10.6003 2 11.0332V12.9669C2 13.3998 2 13.6163 2.10308 13.7508C2.20615 13.8854 2.46711 13.9558 2.98902 14.0965C4.9394 14.6225 6.16008 16.6616 5.65672 18.5992C5.51829 19.1321 5.44907 19.3985 5.51516 19.5548C5.58126 19.7111 5.77092 19.8188 6.15025 20.0341L7.87495 21.0134C8.24721 21.2247 8.43334 21.3304 8.6004 21.3079C8.76746 21.2854 8.95588 21.0973 9.33271 20.7213C10.7927 19.2644 13.2088 19.2643 14.6689 20.7212C15.0457 21.0973 15.2341 21.2853 15.4012 21.3078C15.5682 21.3303 15.7544 21.2246 16.1266 21.0133L17.8513 20.034C18.2307 19.8187 18.4204 19.711 18.4864 19.5547C18.5525 19.3984 18.4833 19.132 18.3448 18.5991C17.8412 16.6616 19.0609 14.6226 21.011 14.0965Z"
+                                stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                        </svg>
+                    </div>
+                    <div class="bg-slate-100 p-1 rounded-sm">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                            class="text-black h-12 w-12 cursor-pointer">
+                            <path
+                                d="M21.5 14.0784C20.3003 14.7189 18.9301 15.0821 17.4751 15.0821C12.7491 15.0821 8.91792 11.2509 8.91792 6.52485C8.91792 5.06986 9.28105 3.69968 9.92163 2.5C5.66765 3.49698 2.5 7.31513 2.5 11.8731C2.5 17.1899 6.8101 21.5 12.1269 21.5C16.6849 21.5 20.503 18.3324 21.5 14.0784Z"
+                                stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    <section>
+        <div class="flex pt-12 h-[90vh]">
+            <div class="w-1/2 flex flex-col justify-center items-center ">
+                <h1 class="font-body text-black font-bold text-3xl">PROJECTS</h1>
+                <div class="w-[80%] h-[80%] bg-[#131313] rounded-lg shadow-md mt-8">
+
+                </div>
+            </div>
+            <div class="w-1/2 flex flex-col justify-center items-center">
+                <h1 class="font-body text-black font-bold text-3xl">SKILLS</h1>
+                <div class="w-[80%] h-[80%] bg-[#131313] rounded-lg shadow-md mt-8">
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <style>
+        @keyframes spin-slow {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    
+    .animate-spin-slow {
+      animation: spin-slow 4s linear infinite;
+    }
+    
+    </style>
 </body>
+
+
 
 </html>
