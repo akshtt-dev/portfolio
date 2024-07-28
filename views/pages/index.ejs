@@ -1,146 +1,129 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | akshat.tech</title>
+    <link rel="shortcut icon" href="/src/root/images/avatar.jpg" type="image/jpg">
     <link rel="stylesheet" href="/src/tailwindcss/output.css">
 </head>
 
-<body class="bg-[#d9d9d9] box-border">
-    <section class="bg-[#131313] pt-4">
-        <nav class="bg-[#0f0f0f] flex rounded-full mx-8 px-4 justify-evenly items-center">
+<body class="dark:bg-[#d9d9d9] box-border bg-[#161414]">
+    <section class="dark:bg-[#131313] bg-[#f4f4f4] pt-4">
+        <nav class="dark:bg-[#0f0f0f] bg-[#ffffff] flex rounded-full mx-8 px-4 justify-evenly items-center">
             <div class="w-1/2 sm:w-1/4">
-                <h1 class="text-green-500 font-bold flex items-center"><a href="/" class="font-body">akshat.tech</a>
+                <h1 class="dark:text-green-400 text-[#05bf39] font-bold flex items-center"><a href="/"
+                        class="font-body">akshat.tech</a>
                 </h1>
             </div>
             <div class="sm:w-1/2">
                 <ul class="gap-3 justify-center items-center hidden sm:flex">
-                    <li class="text-white font-bold"><a href="/" class="font-body">HOME</a></li>
-                    <li class="text-white font-bold"><a href="/about" class="font-body">ABOUT</a></li>
-                    <li class="text-white font-bold"><a href="/projects" class="font-body">PROJECTS</a></li>
-                    <li class="text-white font-bold"><a href="/contact" class="font-body">CONTACT</a></li>
+                    <li class="dark:text-white text-black font-bold"><a href="/" class="font-body">HOME</a></li>
+                    <li class="dark:text-white text-black font-bold"><a href="#about" class="font-body">ABOUT</a></li>
+                    <li class="dark:text-white text-black font-bold"><a href="#projects" class="font-body">PROJECTS</a>
+                    </li>
+                    <li class="dark:text-white text-black font-bold"><a href="/contact" class="font-body">CONTACT</a>
+                    </li>
                 </ul>
             </div>
             <div class="w-1/2 sm:w-1/4 flex justify-end items-center">
-                <svg class="h-8 w-8 cursor-pointer" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M24 42C19 42 14.75 40.25 11.25 36.75C7.75 33.25 6 29 6 24C6 19 7.75 14.75 11.25 11.25C14.75 7.75 19 6 24 6C24.4667 6 24.925 6.01667 25.375 6.05C25.825 6.08333 26.2667 6.13333 26.7 6.2C25.3333 7.16667 24.2417 8.425 23.425 9.975C22.6083 11.525 22.2 13.2 22.2 15C22.2 18 23.25 20.55 25.35 22.65C27.45 24.75 30 25.8 33 25.8C34.8333 25.8 36.5167 25.3917 38.05 24.575C39.5833 23.7583 40.8333 22.6667 41.8 21.3C41.8667 21.7333 41.9167 22.175 41.95 22.625C41.9833 23.075 42 23.5333 42 24C42 29 40.25 33.25 36.75 36.75C33.25 40.25 29 42 24 42ZM24 38C26.9333 38 29.5667 37.1917 31.9 35.575C34.2333 33.9583 35.9333 31.85 37 29.25C36.3333 29.4167 35.6667 29.55 35 29.65C34.3333 29.75 33.6667 29.8 33 29.8C28.9 29.8 25.4083 28.3583 22.525 25.475C19.6417 22.5917 18.2 19.1 18.2 15C18.2 14.3333 18.25 13.6667 18.35 13C18.45 12.3333 18.5833 11.6667 18.75 11C16.15 12.0667 14.0417 13.7667 12.425 16.1C10.8083 18.4333 10 21.0667 10 24C10 27.8667 11.3667 31.1667 14.1 33.9C16.8333 36.6333 20.1333 38 24 38Z"
-                        fill="white" />
-                </svg>
-                <svg class="h-10 w-10 cursor-pointer" viewBox="0 0 68 73" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <g clip-path="url(#clip0_4_262)">
-                        <rect x="13.8235" y="16.1726" class="h-10 w-10" rx="20"
-                            transform="rotate(-0.147061 13.8235 16.1726)" fill="#E6E0E9" />
-                        <path
-                            d="M31.1505 46.1282L30.7423 42.9292C30.5254 42.8465 30.321 42.747 30.129 42.6308C29.9371 42.5146 29.7492 42.3901 29.5656 42.2573L26.5938 43.5149L23.8316 38.772L26.4016 36.8154C26.3846 36.6987 26.376 36.5863 26.3757 36.4779L26.374 35.8029C26.3737 35.6946 26.3818 35.5821 26.3981 35.4654L23.8181 33.522L26.5559 28.7649L29.5341 30.0073C29.7171 29.8735 29.9085 29.748 30.1082 29.6308C30.3079 29.5136 30.5076 29.4131 30.7074 29.3293L31.0992 26.1283L36.5992 26.1141L37.0074 29.3131C37.2242 29.3959 37.4287 29.4954 37.6206 29.6115C37.8126 29.7277 38.0004 29.8522 38.1841 29.9851L41.1559 28.7275L43.9181 33.4704L41.3481 35.427C41.365 35.5436 41.3737 35.6561 41.3739 35.7644L41.3757 36.4394C41.3759 36.5478 41.3596 36.6603 41.3265 36.7771L43.9065 38.7204L41.1687 43.4775L38.2155 42.2351C38.0325 42.3689 37.8412 42.4943 37.6415 42.6115C37.4418 42.7287 37.2421 42.8292 37.0423 42.9131L36.6505 46.1141L31.1505 46.1282ZM32.8954 44.1237L34.8704 44.1186L35.2136 41.4678C35.7299 41.3331 36.2085 41.136 36.6495 40.8766C37.0905 40.6171 37.4939 40.3036 37.8596 39.936L40.3373 40.9546L41.3079 39.2521L39.1537 37.6326C39.2365 37.3991 39.2942 37.1531 39.3268 36.8947C39.3595 36.6363 39.3755 36.3737 39.3748 36.1071C39.3741 35.8404 39.3568 35.5779 39.3228 35.3197C39.2888 35.0614 39.2298 34.8158 39.1459 34.5826L41.2917 32.9521L40.3124 31.2546L37.8401 32.311C37.4724 31.9286 37.0674 31.6088 36.6251 31.3516C36.1828 31.0944 35.7031 30.8998 35.1861 30.7678L34.8543 28.1186L32.8793 28.1237L32.5361 30.7746C32.0198 30.9093 31.5411 31.1063 31.1001 31.3658C30.6591 31.6252 30.2557 31.9388 29.89 32.3064L27.4124 31.2877L26.4418 32.9902L28.5959 34.5847C28.5132 34.8349 28.4555 35.0851 28.4228 35.3352C28.3901 35.5853 28.3741 35.852 28.3748 36.1353C28.3755 36.402 28.3929 36.6602 28.4268 36.9102C28.4608 37.1601 28.5198 37.4099 28.6038 37.6597L26.4579 39.2902L27.4373 40.9877L29.9096 39.9314C30.2772 40.3138 30.6822 40.6336 31.1246 40.8907C31.5669 41.1479 32.0466 41.3426 32.5636 41.4746L32.8954 44.1237ZM33.9338 39.621C34.9005 39.6186 35.7246 39.2748 36.4062 38.5897C37.0877 37.9046 37.4273 37.0787 37.4248 36.1121C37.4223 35.1454 37.0786 34.3213 36.3935 33.6397C35.7084 32.9581 34.8825 32.6186 33.9158 32.6211C32.9325 32.6236 32.1042 32.9674 31.431 33.6524C30.7577 34.3375 30.4224 35.1634 30.4248 36.13C30.4273 37.0967 30.7669 37.9208 31.4437 38.6024C32.1204 39.284 32.9505 39.6236 33.9338 39.621Z"
-                            fill="#65558F" />
-                    </g>
-                    <defs>
-                        <clipPath id="clip0_4_262">
-                            <rect x="13.8235" y="16.1726" width="40" height="40" rx="20"
-                                transform="rotate(-0.147061 13.8235 16.1726)" fill="white" />
-                        </clipPath>
-                    </defs>
-                </svg>
+                <button id="theme-toggle">
+                    <%- moonSvg %>
+                </button>
+                <%- menuSvg %>
             </div>
         </nav>
         <div class="flex flex-col px-28 pb-8 pt-20">
             <div class="flex">
                 <div class="flex flex-col w-2/3 gap-3">
-                    <h1 class="text-white font-extrabold text-6xl font-body">Hello, I am</h1>
-                    <h1 class="text-green-500 font-extrabold text-6xl font-body">Akshat Singh</h1>
-                    <p class="text-white font-bold text-4xl font-body mt-5">Started coding at 12, and I'm currently
+                    <h1 class="text-black dark:text-white font-extrabold text-6xl font-body">Hello, I am</h1>
+                    <h1 class="text-[#05bf39] dark:text-green-400 font-extrabold text-6xl font-body">Akshat Singh</h1>
+                    <p class="text-black dark:text-white font-bold text-3xl font-body mt-3">Started coding at 12, and
+                        I'm currently
                         balancing school studies with my passion for technology. I create dynamic web applications and
                         share my journey on my YouTube channel, where I teach and explore coding concepts.</p>
+                    <p class="text-black dark:text-white font-body font-semibold mt-4">
+                        <%- locationSvg %>
+                            Delhi/India
+                    </p>
                 </div>
                 <div class="flex justify-center items-center w-1/3">
-                    <img src="src/root/images/avatar.jpg" alt="Profile Icon" class="border-[10px] bg-white rounded-full h-[85%] transition-all duration-1000 blob">
-                </div>                             
+                    <img src="src/root/images/avatar.jpg" alt="Profile Icon"
+                        class="border-[10px] border-[#05bf39] dark:border-green-400 rounded-full h-[85%] transition-all duration-1000 blob shadow-lg">
+                </div>
             </div>
             <div class="flex mt-24 justify-center">
-                <div class="flex justify-center items-center gap-10 bg-[#282828] py-2 px-2 rounded-md">
-                    <div class="bg-slate-100 p-1 rounded-sm">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-                            class="text-black h-12 w-12 cursor-pointer">
-                            <path d="M10 20.5675C6.57143 21.7248 3.71429 20.5675 2 17" stroke="currentColor"
-                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                            <path
-                                d="M10 22V18.7579C10 18.1596 10.1839 17.6396 10.4804 17.1699C10.6838 16.8476 10.5445 16.3904 10.1771 16.2894C7.13394 15.4528 5 14.1077 5 9.64606C5 8.48611 5.38005 7.39556 6.04811 6.4464C6.21437 6.21018 6.29749 6.09208 6.31748 5.9851C6.33746 5.87813 6.30272 5.73852 6.23322 5.45932C5.95038 4.32292 5.96871 3.11619 6.39322 2.02823C6.39322 2.02823 7.27042 1.74242 9.26698 2.98969C9.72282 3.27447 9.95075 3.41686 10.1515 3.44871C10.3522 3.48056 10.6206 3.41384 11.1573 3.28041C11.8913 3.09795 12.6476 3 13.5 3C14.3524 3 15.1087 3.09795 15.8427 3.28041C16.3794 3.41384 16.6478 3.48056 16.8485 3.44871C17.0493 3.41686 17.2772 3.27447 17.733 2.98969C19.7296 1.74242 20.6068 2.02823 20.6068 2.02823C21.0313 3.11619 21.0496 4.32292 20.7668 5.45932C20.6973 5.73852 20.6625 5.87813 20.6825 5.9851C20.7025 6.09207 20.7856 6.21019 20.9519 6.4464C21.6199 7.39556 22 8.48611 22 9.64606C22 14.1077 19.8661 15.4528 16.8229 16.2894C16.4555 16.3904 16.3162 16.8476 16.5196 17.1699C16.8161 17.6396 17 18.1596 17 18.7579V22"
-                                stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-                                stroke-linejoin="round" />
-                        </svg>
+                <div
+                    class="flex justify-center items-center gap-10 bg-[#e3e3e3] dark:bg-[#282828] py-2 px-2 rounded-md">
+                    <a href="https://github.com/akshtt-dev" target="_blank">
+                        <div class="bg-[#f4f4f4] dark:bg-[#131313] p-1 rounded-sm">
+                            <%- githubSvg %>
+                        </div>
+                    </a>
+                    <div class="bg-[#f4f4f4] dark:bg-[#131313] p-1 rounded-sm">
+                        <%- messageSvg %>
                     </div>
-                    <div class="bg-slate-100 p-1 rounded-sm">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-                            class="text-black h-12 w-12 cursor-pointer">
-                            <path
-                                d="M22 11.5667C22 16.8499 17.5222 21.1334 12 21.1334C11.3507 21.1343 10.7032 21.0742 10.0654 20.9545C9.60633 20.8682 9.37678 20.8251 9.21653 20.8496C9.05627 20.8741 8.82918 20.9948 8.37499 21.2364C7.09014 21.9197 5.59195 22.161 4.15111 21.893C4.69874 21.2194 5.07275 20.4112 5.23778 19.5448C5.33778 19.0148 5.09 18.5 4.71889 18.1231C3.03333 16.4115 2 14.1051 2 11.5667C2 6.28357 6.47778 2 12 2C17.5222 2 22 6.28357 22 11.5667Z"
-                                stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
-                            <path d="M11.9955 12H12.0045M15.991 12H16M8 12H8.00897" stroke="currentColor"
-                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
-                    </div>
-                    <div class="bg-slate-100 p-1 rounded-sm">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-                            class="text-black h-12 w-12 cursor-pointer">
-                            <path
-                                d="M15.5 12C15.5 13.933 13.933 15.5 12 15.5C10.067 15.5 8.5 13.933 8.5 12C8.5 10.067 10.067 8.5 12 8.5C13.933 8.5 15.5 10.067 15.5 12Z"
-                                stroke="currentColor" stroke-width="1.5" />
-                            <path
-                                d="M21.011 14.0965C21.5329 13.9558 21.7939 13.8854 21.8969 13.7508C22 13.6163 22 13.3998 22 12.9669V11.0332C22 10.6003 22 10.3838 21.8969 10.2493C21.7938 10.1147 21.5329 10.0443 21.011 9.90358C19.0606 9.37759 17.8399 7.33851 18.3433 5.40087C18.4817 4.86799 18.5509 4.60156 18.4848 4.44529C18.4187 4.28902 18.2291 4.18134 17.8497 3.96596L16.125 2.98673C15.7528 2.77539 15.5667 2.66972 15.3997 2.69222C15.2326 2.71472 15.0442 2.90273 14.6672 3.27873C13.208 4.73448 10.7936 4.73442 9.33434 3.27864C8.95743 2.90263 8.76898 2.71463 8.60193 2.69212C8.43489 2.66962 8.24877 2.77529 7.87653 2.98663L6.15184 3.96587C5.77253 4.18123 5.58287 4.28891 5.51678 4.44515C5.45068 4.6014 5.51987 4.86787 5.65825 5.4008C6.16137 7.3385 4.93972 9.37763 2.98902 9.9036C2.46712 10.0443 2.20617 10.1147 2.10308 10.2492C2 10.3838 2 10.6003 2 11.0332V12.9669C2 13.3998 2 13.6163 2.10308 13.7508C2.20615 13.8854 2.46711 13.9558 2.98902 14.0965C4.9394 14.6225 6.16008 16.6616 5.65672 18.5992C5.51829 19.1321 5.44907 19.3985 5.51516 19.5548C5.58126 19.7111 5.77092 19.8188 6.15025 20.0341L7.87495 21.0134C8.24721 21.2247 8.43334 21.3304 8.6004 21.3079C8.76746 21.2854 8.95588 21.0973 9.33271 20.7213C10.7927 19.2644 13.2088 19.2643 14.6689 20.7212C15.0457 21.0973 15.2341 21.2853 15.4012 21.3078C15.5682 21.3303 15.7544 21.2246 16.1266 21.0133L17.8513 20.034C18.2307 19.8187 18.4204 19.711 18.4864 19.5547C18.5525 19.3984 18.4833 19.132 18.3448 18.5991C17.8412 16.6616 19.0609 14.6226 21.011 14.0965Z"
-                                stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
-                        </svg>
-                    </div>
-                    <div class="bg-slate-100 p-1 rounded-sm">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-                            class="text-black h-12 w-12 cursor-pointer">
-                            <path
-                                d="M21.5 14.0784C20.3003 14.7189 18.9301 15.0821 17.4751 15.0821C12.7491 15.0821 8.91792 11.2509 8.91792 6.52485C8.91792 5.06986 9.28105 3.69968 9.92163 2.5C5.66765 3.49698 2.5 7.31513 2.5 11.8731C2.5 17.1899 6.8101 21.5 12.1269 21.5C16.6849 21.5 20.503 18.3324 21.5 14.0784Z"
-                                stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-                                stroke-linejoin="round" />
-                        </svg>
-                    </div>
+                    <a href="https://x.com/_akshtt_/" target="_blank">
+                        <div class="bg-[#f4f4f4] dark:bg-[#131313] p-1 rounded-sm">
+                            <%- xSvg %>
+                        </div>
+                    </a>
+                    <a href="https://youtube.com/@akshttdev?si=qstV2fZTfv-_tbGN" target="_blank">
+                        <div class="bg-[#f4f4f4] dark:bg-[#131313] p-1 rounded-sm">
+                            <%- youtubeSvg %>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
     </section>
     <section>
-        <div class="flex pt-12 h-[90vh]">
-            <div class="w-1/2 flex flex-col justify-center items-center ">
-                <h1 class="font-body text-black font-bold text-3xl">PROJECTS</h1>
-                <div class="w-[80%] h-[80%] bg-[#131313] rounded-lg shadow-md mt-8">
+        <div class="flex pt-12 h-[90vh] px-28 gap-12 pb-16">
+            <div class="w-1/2 flex flex-col justify-center items-center" id="projects">
+                <h1 class="font-body text-white dark:text-black font-bold text-3xl">PROJECTS</h1>
+                <div class="h-full w-full bg-[#f4f4f4] dark:bg-[#131313] rounded-lg shadow-md mt-8">
 
                 </div>
             </div>
-            <div class="w-1/2 flex flex-col justify-center items-center">
-                <h1 class="font-body text-black font-bold text-3xl">SKILLS</h1>
-                <div class="w-[80%] h-[80%] bg-[#131313] rounded-lg shadow-md mt-8">
+            <div class="w-1/2 flex flex-col justify-center items-center" id="skills">
+                <h1 class="font-body text-white dark:text-black font-bold text-3xl">SKILLS</h1>
+                <div class="w-full h-full bg-[#f4f4f4] dark:bg-[#131313] rounded-lg shadow-md mt-8">
 
                 </div>
             </div>
         </div>
     </section>
+    <footer class="bg-[#f4f4f4] dark:bg-[#131313] flex flex-row justify-between py-12 px-28">
+        <div class="flex flex-col items-center justify-center">
+            <h1 class="text-[#131313] dark:text-[#b3b3b3] font-body font-bold">Copyright 2024 | akshat.tech</h1>
+        </div>
+        <div class="flex flex-col items-center justify-center">
+            <h1>
+                <%- emailSvg %>
+                    <a href="mailto:mail@akshat.tech"
+                        class="text-[#131313] dark:text-[#b3b3b3] font-body font-bold">mail@akshat.tech</a>
+            </h1>
+        </div>
+    </footer>
     <style>
         .blob {
-            animation: blob 5s infinite;
+            animation: blob 8s infinite;
         }
+
         @keyframes blob {
-            0% {
-                border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
-            }
-            50% {
-                border-radius: 50% 50% 50% 50% / 10% 10% 90% 90%;
-            }
+
+            0%,
             100% {
-                border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+                border-radius: 70% 80% 90% 60% / 60% 70% 80% 90%;
+            }
+
+            50% {
+                border-radius: 60% 90% 80% 70% / 90% 80% 70% 60%;
             }
         }
     </style>
+    <script src="/src/root/js/script.js"></script>
 </body>
-
-
 
 </html>
