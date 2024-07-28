@@ -556,6 +556,14 @@ video {
   --tw-contain-style:  ;
 }
 
+.sticky{
+  position: sticky;
+}
+
+.top-4{
+  top: 1rem;
+}
+
 .mx-8{
   margin-left: 2rem;
   margin-right: 2rem;
@@ -689,10 +697,6 @@ video {
 
 .snap-start{
   scroll-snap-align: start;
-}
-
-.snap-center{
-  scroll-snap-align: center;
 }
 
 .flex-row{
@@ -840,10 +844,6 @@ video {
 
 .pt-12{
   padding-top: 3rem;
-}
-
-.pt-4{
-  padding-top: 1rem;
 }
 
 .align-text-bottom{
@@ -1073,10 +1073,6 @@ video {
 
   .lg\:w-2\/3{
     width: 66.666667%;
-  }
-
-  .lg\:snap-none{
-    scroll-snap-type: none;
   }
 
   .lg\:flex-row{
