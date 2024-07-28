@@ -679,6 +679,18 @@ video {
   cursor: pointer;
 }
 
+.snap-y{
+  scroll-snap-type: y var(--tw-scroll-snap-strictness);
+}
+
+.snap-mandatory{
+  --tw-scroll-snap-strictness: mandatory;
+}
+
+.snap-start{
+  scroll-snap-align: start;
+}
+
 .flex-row{
   flex-direction: row;
 }
@@ -1053,6 +1065,10 @@ video {
 
   .lg\:w-2\/3{
     width: 66.666667%;
+  }
+
+  .lg\:snap-none{
+    scroll-snap-type: none;
   }
 
   .lg\:flex-row{
