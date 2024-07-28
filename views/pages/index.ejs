@@ -9,22 +9,20 @@
     <link rel="stylesheet" href="/src/tailwindcss/output.css">
 </head>
 
-<body class="dark:bg-[#d9d9d9] box-border bg-[#161414] snap-y snap-mandatory">
+<body class="dark:bg-[#d9d9d9] box-border bg-[#161414] snap-y snap-mandatory sm:scroll-smooth">
     <section class="dark:bg-[#131313] bg-[#f4f4f4] pt-4">
         <nav class="dark:bg-[#0f0f0f] bg-[#ffffff] flex rounded-full mx-8 px-4 justify-evenly items-center">
             <div class="w-1/2 sm:w-1/4">
-                <h1 class="dark:text-green-400 text-[#05bf39] font-bold flex items-center"><a href="/"
-                        class="font-body">akshat.tech</a>
+                <h1 class="dark:text-green-400 text-[#05bf39] font-bold flex items-center">
+                    <a href="/" class="font-body">akshat.tech</a>
                 </h1>
             </div>
             <div class="sm:w-1/2">
                 <ul class="gap-3 justify-center items-center hidden sm:flex">
                     <li class="dark:text-white text-black font-bold"><a href="/" class="font-body">HOME</a></li>
                     <li class="dark:text-white text-black font-bold"><a href="#about" class="font-body">ABOUT</a></li>
-                    <li class="dark:text-white text-black font-bold"><a href="#projects" class="font-body">PROJECTS</a>
-                    </li>
-                    <li class="dark:text-white text-black font-bold"><a href="/contact" class="font-body">CONTACT</a>
-                    </li>
+                    <li class="dark:text-white text-black font-bold"><a href="#projects" class="font-body">PROJECTS</a></li>
+                    <li class="dark:text-white text-black font-bold"><a href="/contact" class="font-body">CONTACT</a></li>
                 </ul>
             </div>
             <div class="w-1/2 sm:w-1/4 flex justify-end items-center">
@@ -37,21 +35,18 @@
         <div class="flex flex-col px-8 sm:px-28 pb-8 p-10 sm:pt-20">
             <div class="flex lg:flex-row flex-col-reverse">
                 <div class="flex flex-col w-full lg:w-2/3 gap-3 snap-start" id="about">
-                    <h1
-                        class="text-black dark:text-white font-extrabold text-3xl sm:text-4xl md:text-5xl xl:text-6xl font-body">
-                        Hello, I am</h1>
-                    <h1
-                        class="text-[#05bf39] dark:text-green-400 font-extrabold text-3xl sm:text-4xl md:text-5xl xl:text-6xl font-body">
-                        Akshat Singh</h1>
-                    <p
-                        class="text-black dark:text-white font-bold text-2xl sm:text-3xl md:text-2xl xl:text-3xl font-body mt-3">
-                        Started coding at 12, and
-                        I'm currently
-                        balancing school studies with my passion for technology. I create dynamic web applications and
-                        share my journey on my YouTube channel, where I teach and explore coding concepts.</p>
+                    <h1 class="text-black dark:text-white font-extrabold text-3xl sm:text-4xl md:text-5xl xl:text-6xl font-body">
+                        Hello, I am
+                    </h1>
+                    <h1 class="text-[#05bf39] dark:text-green-400 font-extrabold text-3xl sm:text-4xl md:text-5xl xl:text-6xl font-body">
+                        Akshat Singh
+                    </h1>
+                    <p class="text-black dark:text-white font-bold text-2xl sm:text-3xl md:text-2xl xl:text-3xl font-body mt-3">
+                        Started coding at 12, and I'm currently balancing school studies with my passion for technology. I create dynamic web applications and share my journey on my YouTube channel, where I teach and explore coding concepts.
+                    </p>
                     <p class="text-black dark:text-white font-body font-semibold mt-4">
                         <%- locationSvg %>
-                            Delhi/India
+                        Delhi/India
                     </p>
                 </div>
                 <div class="flex flex-col lg:justify-center items-center h-screen lg:h-auto w-full lg:w-1/3">
@@ -62,8 +57,7 @@
                             <a href="#about"><%- arrowDownSvg %></a>
                         </div>
                         <div class="flex flex-row gap-4">
-                            <a href="https://youtube.com/@akshttdev?si=qstV2fZTfv-_tbGN" target="_blank"><%- youtube2Svg
-                                    %></a>
+                            <a href="https://youtube.com/@akshttdev?si=qstV2fZTfv-_tbGN" target="_blank"><%- youtube2Svg %></a>
                             <a href="https://github.com/akshtt-dev" target="_blank"><%- github2Svg %></a>
                             <a href="https://discordapp.com/users/1056531806763102218/" target="_blank"><%- discord2Svg %></a>
                             <a href="https://x.com/_akshtt_/" target="_blank"><%- twitter2Svg %></a>
@@ -72,8 +66,7 @@
                 </div>
             </div>
             <div class="flex mt-24 justify-center">
-                <div
-                    class="flex justify-center items-center gap-10 bg-[#e3e3e3] dark:bg-[#282828] py-2 px-2 rounded-md">
+                <div class="flex justify-center items-center gap-10 bg-[#e3e3e3] dark:bg-[#282828] py-2 px-2 rounded-md">
                     <a href="https://github.com/akshtt-dev" target="_blank">
                         <div class="bg-[#f4f4f4] dark:bg-[#131313] p-1 rounded-sm">
                             <%- githubSvg %>
@@ -96,18 +89,18 @@
             </div>
         </div>
     </section>
-    <section>
-        <div class="flex flex-col lg:flex-row pt-12 h-screen lg:h-[90vh] px-10 sm:px-28 lg:px-28 gap-12 pb-16">
-            <div class="w-full lg:h-full h-[50%] lg:w-1/2 flex flex-col justify-center items-center snap-start" id="projects">
+    <section class="h-screen lg:h-[90vh] snap-start" id="projects">
+        <div class="flex flex-col lg:flex-row pt-12 h-full px-10 sm:px-28 lg:px-28 gap-12 pb-16">
+            <div class="w-full lg:h-full h-[50%] lg:w-1/2 flex flex-col justify-center items-center">
                 <h1 class="font-body text-white dark:text-black font-bold text-3xl">PROJECTS</h1>
                 <div class="h-full w-full bg-[#f4f4f4] dark:bg-[#131313] rounded-lg shadow-md mt-8">
-
+                    <!-- Projects Content -->
                 </div>
             </div>
             <div class="w-full lg:h-full h-[50%] lg:w-1/2 flex flex-col justify-center items-center snap-start" id="skills">
                 <h1 class="font-body text-white dark:text-black font-bold text-3xl">SKILLS</h1>
                 <div class="w-full h-full bg-[#f4f4f4] dark:bg-[#131313] rounded-lg shadow-md mt-8">
-
+                    <!-- Skills Content -->
                 </div>
             </div>
         </div>
@@ -119,8 +112,7 @@
         <div class="flex flex-col items-center justify-center">
             <h1>
                 <%- emailSvg %>
-                    <a href="mailto:mail@akshat.tech"
-                        class="text-[#131313] dark:text-[#b3b3b3] font-body font-bold">mail@akshat.tech</a>
+                <a href="mailto:mail@akshat.tech" class="text-[#131313] dark:text-[#b3b3b3] font-body font-bold">mail@akshat.tech</a>
             </h1>
         </div>
     </footer>
@@ -130,12 +122,9 @@
         }
 
         @keyframes blob {
-
-            0%,
-            100% {
+            0%, 100% {
                 border-radius: 70% 80% 90% 60% / 60% 70% 80% 90%;
             }
-
             50% {
                 border-radius: 60% 90% 80% 70% / 90% 80% 70% 60%;
             }
