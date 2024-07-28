@@ -12,6 +12,12 @@ router.get("/", (req, res) => {
     xSvg: svg.x,
     youtubeSvg: svg.youtube,
     emailSvg: svg.email,
+    arrowDownSvg: svg.arrowDown,
+    discord2Svg: svg.discord2,
+    youtube2Svg: svg.youtube2,
+    twitter2Svg: svg.twitter2,
+    github2Svg: svg.github2,
+
   });
 });
 
