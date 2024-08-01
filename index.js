@@ -4,7 +4,14 @@ import mongoose from "mongoose";
 import { join, dirname } from "path";
 import { fileURLToPath, pathToFileURL } from "url";
 import dotenv from "dotenv";
-import { Client, Events, GatewayIntentBits, PresenceUpdateStatus, Collection } from "discord.js";
+import {
+  Client,
+  Events,
+  GatewayIntentBits,
+  PresenceUpdateStatus,
+  Collection,
+  ActivityType,
+} from "discord.js";
 import fs from "fs";
 dotenv.config();
 
@@ -59,28 +66,36 @@ export const client = new Client({
 
 client.commands = new Collection();
 
-const commandsPath = join(__dirname, 'discord/commands');
+const commandsPath = join(__dirname, "discord/commands");
 const commandFolders = fs.readdirSync(commandsPath);
 
 for (const folder of commandFolders) {
   const folderPath = join(commandsPath, folder);
-  const commandFiles = fs.readdirSync(folderPath).filter(file => file.endsWith('.js'));
+  const commandFiles = fs
+    .readdirSync(folderPath)
+    .filter((file) => file.endsWith(".js"));
 
   for (const file of commandFiles) {
     const filePath = pathToFileURL(join(folderPath, file)).href;
-    import(filePath).then(command => {
-      if ('data' in command && 'execute' in command) {
-        client.commands.set(command.data.name, command);
-      } else {
-        console.log(`[WARNING] The command at ${filePath} is missing a required "data" or "execute" property.`);
-      }
-    }).catch(err => console.log(`Failed to load command ${filePath}: ${err}`));
+    import(filePath)
+      .then((command) => {
+        if ("data" in command && "execute" in command) {
+          client.commands.set(command.data.name, command);
+        } else {
+          console.log(
+            `[WARNING] The command at ${filePath} is missing a required "data" or "execute" property.`
+          );
+        }
+      })
+      .catch((err) =>
+        console.log(`Failed to load command ${filePath}: ${err}`)
+      );
   }
 }
 
 const prefix = "!";
 
-client.on('messageCreate', async message => {
+client.on("messageCreate", async (message) => {
   if (!message.content.startsWith(prefix) || message.author.bot) return;
 
   const args = message.content.slice(prefix.length).trim().split(/ +/);
@@ -92,17 +107,28 @@ client.on('messageCreate', async message => {
   try {
     await command.execute(message, args);
   } catch (error) {
-    console.error('Error executing command:', error);
-    await message.reply('There was an error executing that command!');
+    console.error("Error executing command:", error);
+    await message.reply("There was an error executing that command!");
   }
 });
 
 client.once(Events.ClientReady, (readyClient) => {
-  client.user.setPresence({
-    activities: [{ name: "you all comment", type: "WATCHING" }],
-    status: PresenceUpdateStatus.DoNotDisturb,
-  });
   console.log(`Ready! Logged in as ${readyClient.user.tag}`);
+  
+  try {
+    client.user.setPresence({
+      activities: [
+        {
+          name: "your comments",
+          type: ActivityType.Watching,
+        },
+      ],
+      status: PresenceUpdateStatus.DoNotDisturb,
+    });
+    console.log("Presence set successfully.");
+  } catch (error) {
+    console.error("Error setting presence:", error);
+  }
 });
 
 client.login(process.env.DISCORD_BOT_TOKEN);
