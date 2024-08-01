@@ -4,6 +4,12 @@ import mongoose from "mongoose";
 import { join, dirname } from "path";
 import { fileURLToPath } from "url";
 import dotenv from "dotenv";
+import {
+  Client,
+  Events,
+  GatewayIntentBits,
+  PresenceUpdateStatus,
+} from "discord.js";
 dotenv.config();
 
 (async () => {
@@ -43,7 +49,29 @@ import contactRouter from "./routes/contact.js";
 app.use("/", indexRouter);
 app.use("/contact", contactRouter);
 
-
 app.listen(port, () => {
   console.log(`Server running on http://localhost:${port}`);
 });
+
+// Discord bot
+export const client = new Client({
+  intents: [
+    GatewayIntentBits.Guilds,
+    GatewayIntentBits.GuildMessages,
+    GatewayIntentBits.MessageContent,
+    GatewayIntentBits.GuildMembers,
+  ],
+});
+
+client.once(Events.ClientReady, (readyClient) => {
+  console.log(`Ready! Logged in as ${readyClient.user.tag}`);
+});
+
+client.on("ready", () => {
+  client.user.setPresence({
+    activities: [{ name: "you all comment", type: "WATCHING" }],
+    status: PresenceUpdateStatus.DoNotDisturb,
+  });
+});
+
+client.login(process.env.DISCORD_BOT_TOKEN);
