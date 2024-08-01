@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ["./views/*/*.ejs", "./controllers/svg.js"],
+  content: ["./views/**/*.handlebars", "./controllers/svg.js"],
   darkMode: 'class',
   theme: {
     extend: {

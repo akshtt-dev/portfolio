@@ -3,7 +3,8 @@ import * as svg from "../controllers/svg.js";
 const router = express.Router();
 
 router.get("/", (req, res) => {
-  res.render("pages/index", {
+  res.render("index", {
+    title: "Home | akshat.tech",
     moonSvg: svg.moon,
     menuSvg: svg.settings,
     locationSvg: svg.pinPoint,
@@ -17,7 +18,6 @@ router.get("/", (req, res) => {
     youtube2Svg: svg.youtube2,
     twitter2Svg: svg.twitter2,
     github2Svg: svg.github2,
-
   });
 });
 

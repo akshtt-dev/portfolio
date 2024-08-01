@@ -1,31 +1,25 @@
-<!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | akshat.tech</title>
-    <link rel="shortcut icon" href="/src/root/images/avatar.jpg" type="image/jpg">
-    <link rel="stylesheet" href="/src/tailwindcss/output.css">
-</head>
-
-<body class="box-border snap-y snap-mandatory dark:bg-[#131313] bg-[#f4f4f4] sm:scroll-smooth">
-    <%- include('../partials/header') %>
+<div class="box-border snap-y snap-mandatory dark:bg-[#131313] bg-[#f4f4f4] sm:scroll-smooth">
+    {{> header}}
     <section class="dark:bg-[#131313] bg-[#f4f4f4]">
         <div class="flex flex-col px-8 sm:px-28 pb-8 p-10 sm:pt-20">
             <div class="flex lg:flex-row flex-col-reverse">
                 <div class="flex flex-col w-full lg:w-2/3 gap-3 snap-start" id="about">
-                    <h1 class="text-black dark:text-white font-extrabold text-3xl sm:text-4xl md:text-5xl xl:text-6xl font-body">
+                    <h1
+                        class="text-black dark:text-white font-extrabold text-3xl sm:text-4xl md:text-5xl xl:text-6xl font-body">
                         Hello, I am
                     </h1>
-                    <h1 class="text-[#05bf39] dark:text-green-400 font-extrabold text-3xl sm:text-4xl md:text-5xl xl:text-6xl font-body">
+                    <h1
+                        class="text-[#05bf39] dark:text-green-400 font-extrabold text-3xl sm:text-4xl md:text-5xl xl:text-6xl font-body">
                         Akshat Singh
                     </h1>
-                    <p class="text-black dark:text-white font-bold text-2xl sm:text-3xl md:text-2xl xl:text-3xl font-body mt-3">
-                        Started coding at 12, and I'm currently balancing school studies with my passion for technology. I create dynamic web applications and share my journey on my YouTube channel, where I teach and explore coding concepts.
+                    <p
+                        class="text-black dark:text-white font-bold text-2xl sm:text-3xl md:text-2xl xl:text-3xl font-body mt-3">
+                        Started coding at 12, and I'm currently balancing school studies with my passion for technology.
+                        I create dynamic web applications and share my journey on my YouTube channel, where I teach and
+                        explore coding concepts.
                     </p>
                     <p class="text-black dark:text-white font-body font-semibold mt-4">
-                        <%- locationSvg %>
+                        {{{locationSvg}}}
                         Delhi/India
                     </p>
                 </div>
@@ -34,35 +28,38 @@
                         class="border-[10px] border-[#05bf39] dark:border-green-400 rounded-full h-[40%] w-auto lg:h-[85%] transition-all duration-1000 blob shadow-lg">
                     <div class="flex flex-col gap-4 justify-center lg:hidden mt-4">
                         <div class="flex items-center justify-center">
-                            <a href="#about"><%- arrowDownSvg %></a>
+                            <a href="#about">{{{arrowDownSvg}}}</a>
                         </div>
                         <div class="flex flex-row gap-4">
-                            <a href="https://youtube.com/@akshttdev?si=qstV2fZTfv-_tbGN" target="_blank"><%- youtube2Svg %></a>
-                            <a href="https://github.com/akshtt-dev" target="_blank"><%- github2Svg %></a>
-                            <a href="https://discordapp.com/users/1056531806763102218/" target="_blank"><%- discord2Svg %></a>
-                            <a href="https://x.com/_akshtt_/" target="_blank"><%- twitter2Svg %></a>
+                            <a href="https://youtube.com/@akshttdev?si=qstV2fZTfv-_tbGN"
+                                target="_blank">{{{youtube2Svg}}}</a>
+                            <a href="https://github.com/akshtt-dev" target="_blank">{{{github2Svg}}}</a>
+                            <a href="https://discordapp.com/users/1056531806763102218/"
+                                target="_blank">{{{discord2Svg}}}</a>
+                            <a href="https://x.com/_akshtt_/" target="_blank">{{{twitter2Svg}}}</a>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="flex mt-24 justify-center">
-                <div class="flex justify-center items-center gap-10 bg-[#e3e3e3] dark:bg-[#282828] py-2 px-2 rounded-md">
+                <div
+                    class="flex justify-center items-center gap-10 bg-[#e3e3e3] dark:bg-[#282828] py-2 px-2 rounded-md">
                     <a href="https://github.com/akshtt-dev" target="_blank">
                         <div class="bg-[#f4f4f4] dark:bg-[#131313] p-1 rounded-sm">
-                            <%- githubSvg %>
+                            {{{githubSvg}}}
                         </div>
                     </a>
                     <div class="bg-[#f4f4f4] dark:bg-[#131313] p-1 rounded-sm">
-                        <%- messageSvg %>
+                        {{{messageSvg}}}
                     </div>
                     <a href="https://x.com/_akshtt_/" target="_blank">
                         <div class="bg-[#f4f4f4] dark:bg-[#131313] p-1 rounded-sm">
-                            <%- xSvg %>
+                            {{{xSvg}}}
                         </div>
                     </a>
                     <a href="https://youtube.com/@akshttdev?si=qstV2fZTfv-_tbGN" target="_blank">
                         <div class="bg-[#f4f4f4] dark:bg-[#131313] p-1 rounded-sm">
-                            <%- youtubeSvg %>
+                            {{{youtubeSvg}}}
                         </div>
                     </a>
                 </div>
@@ -77,7 +74,8 @@
                     <!-- Projects Content -->
                 </div>
             </div>
-            <div class="w-full lg:h-full h-[50%] lg:w-1/2 flex flex-col justify-center items-center snap-start" id="skills">
+            <div class="w-full lg:h-full h-[50%] lg:w-1/2 flex flex-col justify-center items-center snap-start"
+                id="skills">
                 <h1 class="font-body text-white dark:text-black font-bold text-3xl">SKILLS</h1>
                 <div class="w-full h-full bg-[#f4f4f4] dark:bg-[#131313] rounded-lg shadow-md mt-8">
                     <!-- Skills Content -->
@@ -85,32 +83,23 @@
             </div>
         </div>
     </section>
-    <footer class="bg-[#f4f4f4] dark:bg-[#131313] flex flex-row justify-between py-12 px-10 sm:px-28">
-        <div class="flex flex-col items-center justify-center">
-            <h1 class="text-[#131313] dark:text-[#b3b3b3] font-body font-bold">Copyright 2024 | akshat.tech</h1>
-        </div>
-        <div class="flex flex-col items-center justify-center">
-            <h1>
-                <%- emailSvg %>
-                <a href="mailto:mail@akshat.tech" class="text-[#131313] dark:text-[#b3b3b3] font-body font-bold">mail@akshat.tech</a>
-            </h1>
-        </div>
-    </footer>
+    {{> footer}}
     <style>
         .blob {
             animation: blob 8s infinite;
         }
 
         @keyframes blob {
-            0%, 100% {
+
+            0%,
+            100% {
                 border-radius: 70% 80% 90% 60% / 60% 70% 80% 90%;
             }
+
             50% {
                 border-radius: 60% 90% 80% 70% / 90% 80% 70% 60%;
             }
         }
     </style>
-    <script src="/src/root/js/script.js"></script>
-</body>
 
-</html>
+</div>

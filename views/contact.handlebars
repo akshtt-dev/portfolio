@@ -1,0 +1,28 @@
+<div class="w-screen dark:bg-[#131313] bg-[#f4f4f4] overflow-hidden h-svh bg-[url(/src/contact/room_dark_computer.jpg)] bg-cover bg-center">
+    {{> header}}
+    <div class="flex h-full w-full items-center justify-center">
+        <div class="bg-white dark:bg-gray-700 px-4 py-4 w-full m-8 xs:w-[80%] sm:m-auto sm:w-[60%] lg:w-[50%] xl:w-[30%] rounded-sm">
+            <div class="bg-emerald-500 mb-4 pt-1 rounded-sm" id="confirmDiv" hidden>
+                <h1 class="dark:text-gray-800 text-white font-body px-2 font-medium">Message sent!</h1>
+                <div class="dark:bg-black bg-slate-300 h-1 w-0 rounded-[inherit]" id="dismissLoading"></div>
+            </div>
+            <form class="flex flex-col gap-4 h-full w-full" id="contact-form">
+                <input type="text" name="name" id="name" placeholder="Name"
+                    class="py-1 px-2 text-black dark:text-slate-200 bg-gray-100 dark:bg-slate-800 rounded-sm focus:caret-cyan-500" required>
+                <input type="text" name="subject" id="subject" placeholder="Subject"
+                    class="py-1 px-2 text-black dark:text-slate-200 bg-gray-100 dark:bg-slate-800 rounded-sm focus:caret-cyan-500" required>
+                <input type="email" name="email" id="email" placeholder="Email (Optional)"
+                    class="py-1 px-2 text-black dark:text-slate-200 bg-gray-100 dark:bg-slate-800 rounded-sm focus:caret-cyan-500">
+                <textarea name="message" id="message"
+                    class="py-1 px-2 text-black dark:text-slate-200 bg-gray-100 dark:bg-slate-800 h-48 rounded-sm focus:caret-cyan-500 resize-none"
+                    placeholder="Type your message here..." required></textarea>
+                <input type="submit" value="Submit" class="w-full bg-cyan-400 dark:bg-cyan-500 py-1 font-body font-medium rounded-sm cursor-pointer"  id="submitBtn">
+            </form>
+        </div>
+    </div>
+    <div class="fixed bottom-0 w-full">
+        {{> footer}}
+    </div>
+</div>
+
+<script src="/js/contact/script.js"></script>

@@ -1,10 +1,22 @@
 import express from "express";
+import { engine } from "express-handlebars";
+import mongoose from "mongoose";
 import { join, dirname } from "path";
 import { fileURLToPath } from "url";
 import dotenv from "dotenv";
 dotenv.config();
 
+(async () => {
+  try {
+    await mongoose.connect(process.env.MONGODB_URI);
+    console.log("Connected to the database");
+  } catch (error) {
+    console.error("Error connecting to the database: ", error);
+  }
+})();
+
 const __dirname = dirname(fileURLToPath(import.meta.url));
+
 const app = express();
 const port = process.env.PORT || 3000;
 
@@ -12,8 +24,9 @@ const port = process.env.PORT || 3000;
 app.use(express.static(join(__dirname, "public")));
 
 // Setting up Handlebars as the view engine
-app.set("view engine", "ejs");
-app.set("views", join(__dirname, "views")); // Updated line
+app.engine("handlebars", engine());
+app.set("view engine", "handlebars");
+app.set("views", join(__dirname, "views"));
 
 // Middleware to remove trailing slashes from URLs
 app.use((req, res, next) => {
@@ -26,11 +39,10 @@ app.use((req, res, next) => {
 });
 
 import indexRouter from "./routes/index.js";
+import contactRouter from "./routes/contact.js";
 app.use("/", indexRouter);
+app.use("/contact", contactRouter);
 
-// app.use((req, res, next) => {
-//   res.status(404).render("404", { title: "Mosssdark | Error 404", css: "/css/error/error.css", facicon: "/media/error/no-results.png", faciconFormat: "image/png" });
-// });
 
 app.listen(port, () => {
   console.log(`Server running on http://localhost:${port}`);
